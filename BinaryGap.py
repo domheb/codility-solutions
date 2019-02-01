@@ -4,10 +4,10 @@ Compiled on Linux Manjaro 18
 """
 def solution(N):
 
-    #Create useful variables
+    	#Create useful variables
 	bin_number = []
 
-    #Check possibilities:
+    	#Check possibilities:
 	if not isinstance(N, int): #Case 1: N is not an intiger
 		return(-1)
 	if N == 1 or N == 0: #Case 2: N is equal to 0 or 1 so no gap
