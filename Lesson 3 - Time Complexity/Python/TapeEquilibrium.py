@@ -21,5 +21,6 @@ def solution(A):
             temp = -temp
         if max_value > temp:
             max_value = temp
-            
+    
+    #End the algorithm
     return max_value
