@@ -9,7 +9,7 @@ def solution(X, Y, D):
     (X > 1000000000) or (Y > 1000000000) or
     (D > 1000000000)):
         return -1
-    if (X > Y): #Case 2: X is bigger then Y
+    if (X > Y): #X is bigger then Y
         return -1
     
     #Perform operation
@@ -17,4 +17,5 @@ def solution(X, Y, D):
     if ((Y - X) % D): #if there is a rest, it means +1 jump
         jumps+=1
     
+    #End the algorithm
     return jumps
