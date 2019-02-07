@@ -5,7 +5,7 @@ Compiled on Linux Manjaro 18
 def solution(A):
     
     #Check possibilities:
-    if not A: #Case 1: A is empty
+    if not A: #A is empty
         return 1
     
     #Create useful variables
@@ -18,12 +18,12 @@ def solution(A):
     counter = 0
     
     #Check possibilities again:
-    if length < 0 or length > 100000: #Case 2: N is not in range
+    if length < 0 or length > 100000: #N is not in range
         return -1
     for i in range(0,length):
-        if not isinstance(A[i],int): #Case 3: Elements of A are not integers
+        if not isinstance(A[i],int): #Elements of A are not integers
             return -1
-        if (A[i] < 1) or (A[i] > length+1): #Case 4: Elements of A are not in range
+        if (A[i] < 1) or (A[i] > length+1): #Elements of A are not in range
             return -1
     if length == 1:
         if A[0] == 1:
